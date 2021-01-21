@@ -1,4 +1,4 @@
-#profileCards {
+.profileCards {
   display: grid;
       grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
   gap: 2rem;
@@ -7,13 +7,13 @@
   justify-items: center;
 }
 
-#profileCards h2 {
+.profileCards h2 {
   font-family: 'Audiowide', cursive;
   margin-bottom: 10px;
   text-align: center;
 }
 
-#profileCards .card {
+.profileCards .card {
   display: grid;
   gap: .5rem;
   width: 350px;
@@ -22,7 +22,7 @@
   border-radius: .5rem;
 }
 
-#profileCards .card .profileImg {
+.profileCards .card .profileImg {
   background-color: grey;
   width: 80px;
   height: 80px;
@@ -30,19 +30,19 @@
   margin: .5rem;
 }
 
-#profileCards .card .profileImg img {
+.profileCards .card .profileImg img {
   width: 100%;
   height: auto;
   border-radius: 25%;
 }
 
-#profileCards .card .profileCard-info {
+.profileCards .card .profileCard-info {
   margin: .5rem;
   display: flex;
           flex-direction: column;
   background-color: aqua;
 }
 
-#profileCards .card .profileCard-info span {
+.profileCards .card .profileCard-info span {
   margin: .2rem 0;
 }
