@@ -25,8 +25,8 @@ h1, h2, h3 {
 .header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
   justify-items: center;
   margin: 20px 0;
 }
@@ -36,10 +36,10 @@ h1, h2, h3 {
   -webkit-box-shadow: 0px 0px 20px var(--primaryClrDark);
           box-shadow: 0px 0px 20px var(--primaryClrDark);
   border-radius: 1.5rem;
-  min-width: calc(7vw + 7rem);
-  max-width: 200px;
-  min-height: calc(7vw + 7rem);
-  max-height: 200px;
+  min-width: calc(5vw + 5rem);
+  max-width: 100px;
+  min-height: calc(5vw + 5rem);
+  max-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,9 +57,9 @@ h1, h2, h3 {
 }
 
 .techIcon p {
-  font-size: calc(.5vw + 1rem);
+  font-size: calc(.75vw + .5rem);
   color: var(--primaryClrDark);
-  letter-spacing: .15rem;
+  letter-spacing: .1rem;
   font-family: 'audiowide', cursive;
   text-shadow: 0px 0px 10px var(--secondaryClr);
 }
@@ -67,8 +67,8 @@ h1, h2, h3 {
 .techIcon img {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  width: calc(4vw + 4rem);
-  height: calc(4vw + 4rem);
+  width: calc(2.75vw + 2.75rem);
+  height: calc(2.75vw + 2.75rem);
   background-color: #5c5c5c;
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 10px black;
