@@ -1,3 +1,6 @@
+#formSection{
+  padding-top: 100px;
+}
 .newEmployee{
   width: calc(30vw + 15rem);
   margin: auto;
@@ -75,14 +78,14 @@
 
 // Short Profile
 .project {
-  width: 55vw;
+  width: calc(30vw + 15rem);
   margin: auto;
   background-color: var(--primaryBackground);
   margin-bottom: 100px;
   border-radius: 2rem;
   display: grid;
   .form-container {
-    width: 45vw;
+    width: 92.5%;
     margin: 30px auto;
     background-color: white;
     border-radius: 1rem;

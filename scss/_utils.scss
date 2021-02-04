@@ -1,0 +1,40 @@
+#mainSection{
+    position: relative;
+}
+.navBar-container{
+    position: sticky;
+    top: 0;
+}
+.navBar{
+    width: 60vw;
+    padding: .5rem;
+    margin: auto;
+    clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+    background-color: var(--primaryBackground);
+    &__list{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid orangered;
+        li{
+            border-right: 1px solid orangered;
+            margin: 4px 0;
+            padding: .5rem 1rem;
+
+        }
+        li a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            letter-spacing: .1rem;
+        }
+        li a:hover{
+            color: orangered;
+        }
+    }
+    &__list li:last-child{
+        border-right: none;
+    }
+}
