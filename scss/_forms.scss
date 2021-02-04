@@ -1,14 +1,130 @@
-.forms-modal {
-  width: 900px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+.newEmployee{
+  width: calc(30vw + 15rem);
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  padding: 1.5rem;
+  background-color: white;
+  border: 2px solid var(--primaryBackground);
+  border-radius: 1rem 1rem .5rem .5rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 
+.form-header {
+  background-image: url('img/background_1.png');
+  background-size: cover;
+  padding: 1rem;
+  border: 1.6px solid var(--primaryBackground);
+  border-radius: .25rem .25rem 0 0 ;
+  box-shadow: 0px 0px 4px black;
+  margin-bottom: calc(1vw + .75rem);
+  h1{
+    margin-bottom: 20px;
+    font-size: calc(2vw + 2rem);
+  }
+  h3 {
+    font-size: calc(1.25vw + 1.25rem);
+  }
+}
+.form {
+  margin: auto;
+  padding: .5rem;
+  border-radius: .25rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: repeat(2fr, 1fr);
+}
+.form .btn{
+  background-color: coral;
+  width: 150px;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.section {
+  margin-bottom: 25px;
+}
+.section h3 {
+  background-color: coral;
+  margin-bottom: 25px;
+  padding: .25rem;
+}
+.form-box{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 10px;
+  label{
+    color: var(--primaryBackground);
+    text-align: right;
+    padding: .25rem;
+    margin-right: 5px;
+  }
+  input{
+    margin: auto;
+    width: calc(7.5vw + 7.5rem);
+    height: 20px;
+    padding: .25rem;
+    font-size: calc(.5vw + .5rem);
+    border:none;
+    border-bottom: 1.6px solid coral;
+  }
+}
+
+// Short Profile
+.project {
+  width: 55vw;
+  margin: auto;
+  background-color: var(--primaryBackground);
+  margin-bottom: 100px;
+  border-radius: 2rem;
+  display: grid;
+  .form-container {
+    width: 45vw;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 1rem;
+    .shortProfile {
+      background-color: var(--primaryBackground);
+      display: grid;
+      width: 20vw;
+      margin: 20px auto;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      .formBox {
+        display: grid;
+        padding: 1rem;
+        width: 250px;
+        color: white;
+        background-color: var(--primaryBackground);
+        input {
+          padding: 0.25rem 0.5rem;
+        }
+        button {
+          width: 100px;
+          margin: auto;
+          border: none;
+          border-radius: 1rem;
+          padding: 0.25rem 0.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+#obj pre {
+  color: black;
+  width: 100px;
+
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+}
 .templates-document {
   width: 900px;
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   margin: auto;
   margin-bottom: 50px;
 }

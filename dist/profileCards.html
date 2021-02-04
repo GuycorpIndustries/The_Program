@@ -1,66 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Guycorp Cards</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital@1&display=swap" rel="stylesheet">
-		<script defer src="header.js"></script>
-		<script defer src="employee.js"></script>
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guycorp Cards</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="app.js" defer></script>
+    <script src="./js/employeeClass.js"></script>
+  </head>
 
-		<main id="main" class="profileCards">
+  <body>
+    <header id="page-header">
+    </header>
+    <main class="profiles">
+      <section class="employeeSection section">
+        <section class="tableSection">
+          <h2>Employee Table</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Middle Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th>E-Mail</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="employee-list"></tbody>
+          </table>
+        </section>
 
-			<section id="employeeCard">
-				<h2>Employee Profile Card</h2>
-				<div class="employeeCard card">
-					<div class="profileImg">
-						<img src="img/profile_img.jpg" alt="Employee Profile Picture" width="100px" height="100px">
-					</div>
-					<div class="profileCard-info">
-						<span id="employeeId">Employee Id</span>
-						<span id="fullName">Full Name</span>
-						<span id="employeePosition">Employee Position</span>
-					</div>
-					<span id="trainingCertification">Training Certification</span>
-				</div>
-			</section>
+        <section id="employeeCard">
+          <h2>Employee Profile Card</h2>
+          <div class="employeeCard card">
+            <div class="profileImg">
+              <img
+                src="img/profile_img.jpg"
+                alt="Employee Profile Picture"
+                width="100px"
+                height="100px"
+              />
+            </div>
+            <div class="profileCard-info">
+              <span id="employeeId">Employee Id</span>
+              <span id="fullName">Full Name</span>
+              <span id="employeePosition">Employee Position</span>
+            </div>
+            <span id="trainingCertification">Training Certification</span>
+          </div>
+        </section>
+      </section>
 
-
-			<section id="vehicleCard">
-				<h2>Vehicle Profile Card</h2>
-				<div class="vehicleCard card">
-					<div class="profileImg">
-						<img src="" alt="Vehicle Picture" width="100px" height="100px">
-					</div>
-					<div class="profileCard-info">
-						<span id="employeeId">Vehicle Id</span>
-						<span id="fullName">Vehicle Name</span>
-					</div>
-					<span id="vehicleType">Vehicle Type</span>
-					<span id="vehicleInsurance">Insurance</span>
-				</div>
-			</section>
-
-			<section id="toolCard">
-				<h2>Tool Profile Card</h2>
-				<div class="toolCard card">
-					<div class="profileImg">
-						<img src="" alt="Tool Picture" width="100px" height="100px">
-					</div>
-					<div class="profileCard-info">
-						<span id="toolId">Tool Id</span>
-						<span id="fullName">Tool Name</span>
-					</div>
-					<span id="employeePosition">employeePosition</span>
-					<span id="trainingCertification">trainingCertification</span>
-				</div>
-			</section>
-		</main>
-	
-	</body>
+    </main>
+  </body>
 </html>
