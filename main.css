@@ -1,8 +1,20 @@
-h1, h2, h3 {
-  font-family: 'audiowide', cursive;
-  margin-bottom: 50px;
-  text-align: center;
+:root {
+  --primaryBackground: rgb(34, 34, 34);
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+.sassTest {
+  text-align: center;
+  margin-bottom: 200px;
+  color: orangered;
 }
 
 :root {
@@ -22,113 +34,167 @@ h1, h2, h3 {
   font-family: 'roboto', cursive;
 }
 
-.header {
+h1, h2, h3 {
+  font-family: 'audiowide', cursive;
+  margin-bottom: 50px;
+  text-align: center;
+  margin: 0;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+.newEmployee {
+  width: calc(30vw + 15rem);
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 1.5rem;
+  background-color: white;
+  border: 2px solid var(--primaryBackground);
+  border-radius: 1rem 1rem .5rem .5rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.form-header {
+  background-image: url("img/background_1.png");
+  background-size: cover;
+  padding: 1rem;
+  border: 1.6px solid var(--primaryBackground);
+  border-radius: .25rem .25rem 0 0;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  margin-bottom: calc(1vw + .75rem);
+}
+
+.form-header h1 {
+  margin-bottom: 20px;
+  font-size: calc(2vw + 2rem);
+}
+
+.form-header h3 {
+  font-size: calc(1.25vw + 1.25rem);
+}
+
+.form {
+  margin: auto;
+  padding: .5rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2fr];
+      grid-template-columns: repeat(2fr, 1fr);
+}
+
+.form .btn {
+  background-color: coral;
+  width: 150px;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  background-color: coral;
+  margin-bottom: 25px;
+  padding: .25rem;
+}
+
+.form-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  margin: 20px 0;
-}
-
-.techIcon {
-  background-image: var(--radialGradeSecondary);
-  -webkit-box-shadow: 0px 0px 20px var(--primaryClrDark);
-          box-shadow: 0px 0px 20px var(--primaryClrDark);
-  border-radius: 1.5rem;
-  min-width: calc(5vw + 5rem);
-  max-width: 100px;
-  min-height: calc(5vw + 5rem);
-  max-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  opacity: .8;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-bottom: 10px;
 }
 
-.techIcon p {
-  font-size: calc(.75vw + .5rem);
-  color: var(--primaryClrDark);
-  letter-spacing: .1rem;
-  font-family: 'audiowide', cursive;
-  text-shadow: 0px 0px 10px var(--secondaryClr);
+.form-box label {
+  color: var(--primaryBackground);
+  text-align: right;
+  padding: .25rem;
+  margin-right: 5px;
 }
 
-.techIcon img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  width: calc(2.75vw + 2.75rem);
-  height: calc(2.75vw + 2.75rem);
-  background-color: #5c5c5c;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
-  margin: 7px 0;
+.form-box input {
+  margin: auto;
+  width: calc(7.5vw + 7.5rem);
+  height: 20px;
+  padding: .25rem;
+  font-size: calc(.5vw + .5rem);
+  border: none;
+  border-bottom: 1.6px solid coral;
 }
 
-.header .banner {
+.project {
+  width: 55vw;
+  margin: auto;
+  background-color: var(--primaryBackground);
+  margin-bottom: 100px;
+  border-radius: 2rem;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.header .banner h1 {
-  font-size: calc(2vw + 1.5rem);
-  margin-bottom: 20px;
-  text-align: center;
+.project .form-container {
+  width: 45vw;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 1rem;
 }
 
-.header .banner .navBar {
+.project .form-container .shortProfile {
+  background-color: var(--primaryBackground);
+  display: -ms-grid;
+  display: grid;
+  width: 20vw;
+  margin: 20px auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.project .form-container .shortProfile .formBox {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  width: 250px;
+  color: white;
+  background-color: var(--primaryBackground);
+}
+
+.project .form-container .shortProfile .formBox input {
+  padding: 0.25rem 0.5rem;
+}
+
+.project .form-container .shortProfile .formBox button {
+  width: 100px;
   margin: auto;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
 
-.header .banner .navBar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .banner .navBar-list li {
-  border-right: 2px solid black;
-}
-
-.header .banner .navBar-list li:last-child {
-  border-right: none;
-}
-
-.header .banner .navBar-list a {
-  text-decoration: none;
-  padding: 0 1.5rem;
+#obj pre {
   color: black;
-  font-size: calc(1vw + 1rem);
-}
-
-.forms-modal {
-  width: 900px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  margin: auto;
-  margin-bottom: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .templates-document {
@@ -139,52 +205,70 @@ h1, h2, h3 {
   margin-bottom: 50px;
 }
 
-.profileCards {
+.profiles {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(450px, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
-  gap: 2rem;
-  padding: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-items: center;
 }
 
-.profileCards h2 {
-  font-family: 'Audiowide', cursive;
+.profiles .section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  margin-bottom: 100px;
+}
+
+.profiles .section h2 {
+  font-family: "Audiowide", cursive;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.profileCards .card {
+.profiles .section .tableSection {
+  margin: auto;
+}
+
+.profiles .section .tableSection table {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.profiles .section .tableSection table thead tr th {
+  padding: 1rem;
+}
+
+.profiles .section .tableSection table tbody tr {
+  background-color: aqua;
+}
+
+.profiles .section .card {
   display: -ms-grid;
   display: grid;
-  gap: .5rem;
+  margin: auto;
+  gap: 0.5rem;
   width: 350px;
   height: 200px;
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
-.profileCards .card .profileImg {
+.profiles .section .card .profileImg {
   background-color: grey;
   width: 80px;
   height: 80px;
   text-align: center;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-.profileCards .card .profileImg img {
+.profiles .section .card .profileImg img {
   width: 100%;
   height: auto;
   border-radius: 25%;
 }
 
-.profileCards .card .profileCard-info {
-  margin: .5rem;
+.profiles .section .card .profileCard-info {
+  margin: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,6 +279,6 @@ h1, h2, h3 {
   background-color: aqua;
 }
 
-.profileCards .card .profileCard-info span {
-  margin: .2rem 0;
+.profiles .section .card .profileCard-info span {
+  margin: 0.2rem 0;
 }
