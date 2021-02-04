@@ -139,12 +139,12 @@ function titleSection() {
 
   sectionTitle.appendChild(title);
   sectionTitle.setAttribute("class", "sectionTitle");
+  sectionTitle.setAttribute("id", "sectionTitle");
   sectionTitle.style.position = "relative";
   sectionTitle.style.height = "calc(7vw + 7rem)";
   sectionTitle.style.width = "100%";
   sectionTitle.style.backgroundColor = "var(--primaryBackground)";
   sectionTitle.style.borderBottom = "3px solid orangeRed";
-  sectionTitle.style.marginBottom = "calc(2.5vw + 2.5rem)";
   
   pageHeader.appendChild(sectionTitle);
 }
