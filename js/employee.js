@@ -1,16 +1,15 @@
 class Employee {
-    constructor(_firstName, _middleName, _lastName, _phoneNumber, _email) {
-        this.firstName = _firstName;
-        this.middleName = _middleName;
-        this.lastName = _lastName;
-        this.phoneNumber = _phoneNumber;
-        this.email = _email;
-    }
+  constructor(_firstName, _middleName, _lastName, _phoneNumber, _email) {
+    this.firstName = _firstName;
+    this.middleName = _middleName;
+    this.lastName = _lastName;
+    this.phoneNumber = _phoneNumber;
+    this.email = _email;
+  }
 }
 
 class ProfileCard {
   static displayEmployees() {
-
     const StoredEmployee = [
       {
         _firstName: "Christopher",
@@ -56,7 +55,7 @@ class ProfileCard {
 
     list.appendChild(row);
   }
-/*
+  /*
   static deleteEmployee(el) {
     if (el.classList.contains("delete")) {
       el.parentElement.parentElement.remove();
@@ -119,50 +118,38 @@ class ProfileCard {
 document.addEventListener("DOMContentLoaded", ProfileCard.displayEmployees);
 
 // Event: Add Employee
-document.querySelector('#newEmployee').addEventListener("submit", (e) => {
-  
+document.querySelector("#newEmployee").addEventListener("submit", (e) => {
   // Prevent Submit
   e.preventDefault();
-  
+
   // Get Form Values, These are the input values with a new const yhat is used to instantiate a new Employee
-  const _firstName = document.querySelector("#firstName").value;
-  const _middleName = document.querySelector("#middleName").value;
-  const _lastName = document.querySelector("#lastName").value;
-  const _phoneNumber = document.querySelector("#phoneNumber").value;
-  const _email = document.querySelector("#email").value;
+  const firstName = document.querySelector("#firstName").value;
+  const middleName = document.querySelector("#middleName").value;
+  const lastName = document.querySelector("#lastName").value;
+  const phoneNumber = document.querySelector("#phoneNumber").value;
+  const email = document.querySelector("#email").value;
 
   // Validate
 
   // Instantiate Employee
   const employee = new Employee(
-    _firstName,
-    _middleName,
-    _lastName,
-    _phoneNumber,
-    _email
+    firstName,
+    middleName,
+    lastName,
+    phoneNumber,
+    email
   );
 
   // Add Employee to Profile Card
-    ProfileCard.addEmployeeToList(employee);
+  ProfileCard.addEmployeeToList(employee);
 
   // Clear Fields
-    ProfileCard.clearFields();
-
-
+  ProfileCard.clearFields();
 });
 
+// Add Employee to Store class
 
-
-    
-
-    // Add Employee to Store class
-    
-
-    // Show success message
-   
-
-    
-  
+// Show success message
 
 /*
 // Event: Remove a Book

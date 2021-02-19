@@ -117,7 +117,7 @@ function topBanner() {
   bannerTop.style.clipPath =
     "polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%)";
   bannerTop.style.marginBottom = "-7vw";
-  bannerTop.style.backgroundImage = "url('img/background_2.png')";
+  bannerTop.style.backgroundImage = "url('img/header_background_2.png')";
   bannerTop.style.backgroundSize = "cover";
   bannerTop.style.backgroundColor = "white";
   bannerTop.style.zIndex = "1";
@@ -139,12 +139,12 @@ function titleSection() {
 
   sectionTitle.appendChild(title);
   sectionTitle.setAttribute("class", "sectionTitle");
-  sectionTitle.setAttribute("id", "sectionTitle");
   sectionTitle.style.position = "relative";
   sectionTitle.style.height = "calc(7vw + 7rem)";
   sectionTitle.style.width = "100%";
   sectionTitle.style.backgroundColor = "var(--primaryBackground)";
   sectionTitle.style.borderBottom = "3px solid orangeRed";
+  sectionTitle.style.marginBottom = "calc(2.5vw + 2.5rem)";
   
   pageHeader.appendChild(sectionTitle);
 }
