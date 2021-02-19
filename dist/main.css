@@ -1,3 +1,20 @@
+:root {
+  --primaryBackground: rgb(34, 34, 34);
+  --primaryClrDark: black;
+  --primaryClrMid: grey;
+  --secondaryClr: white;
+  --radialGradePrimary: radial-gradient( rgb(110, 110, 110), rgb(240, 240, 240));
+  --radialGradeSecondary: radial-gradient(rgb(255, 255, 255), rgb(170, 170, 170));
+  --primarClrDarkOp: rgba(0, 0, 0, .8);
+  --secondaryClrOp: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'montserrat', cursive;
+}
+
 h1, h2, h3 {
   font-family: 'audiowide', cursive;
   margin-bottom: 50px;
@@ -5,130 +22,170 @@ h1, h2, h3 {
   margin: 0;
 }
 
-:root {
-  --bk_primary: lightblue;
-  --padding:2rem;
-  --margin:1rem;
-  --border:3px solid darkblue;
-  --primaryBackground: black;
-  --primaryClrDark: black;
-  --primaryClrMid: grey;
-  --secondaryClr: white;
+body {
+  background-color: #dddddd;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'roboto', cursive;
+.art2 {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
 }
 
-.header {
+#formSection {
+  padding-top: 100px;
+}
+
+.newEmployee {
+  width: calc(30vw + 15rem);
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 1.5rem;
+  background-color: white;
+  border: 2px solid var(--primaryBackground);
+  border-radius: 1rem 1rem .5rem .5rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+.form-header {
+  background-image: url("img/background_2.png");
+  background-size: cover;
+  padding: 1rem;
+  border: 1.6px solid var(--primaryBackground);
+  border-radius: .25rem .25rem 0 0;
+  -webkit-box-shadow: 0px 0px 4px black;
+          box-shadow: 0px 0px 4px black;
+  margin-bottom: calc(1vw + .75rem);
+}
+
+.form-header h1 {
+  margin-bottom: 20px;
+  font-size: calc(2vw + 2rem);
+}
+
+.form-header h3 {
+  font-size: calc(1.25vw + 1.25rem);
+}
+
+.form {
+  margin: auto;
+  padding: .5rem;
+  border-radius: .25rem;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2fr];
+      grid-template-columns: repeat(2fr, 1fr);
+}
+
+.form .btn {
+  background-color: coral;
+  width: 150px;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  background-color: coral;
+  margin-bottom: 25px;
+  padding: .25rem;
+}
+
+.form-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
-  justify-items: center;
-  margin: 20px 0;
-}
-
-.techIcon {
-  background-image: var(--radialGradeSecondary);
-  -webkit-box-shadow: 0px 0px 20px var(--primaryClrDark);
-          box-shadow: 0px 0px 20px var(--primaryClrDark);
-  border-radius: 1.5rem;
-  min-width: calc(5vw + 5rem);
-  max-width: 100px;
-  min-height: calc(5vw + 5rem);
-  max-height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  opacity: .8;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-bottom: 10px;
 }
 
-.techIcon p {
-  font-size: calc(.75vw + .5rem);
-  color: var(--primaryClrDark);
-  letter-spacing: .1rem;
-  font-family: 'audiowide', cursive;
-  text-shadow: 0px 0px 10px var(--secondaryClr);
+.form-box label {
+  color: var(--primaryBackground);
+  text-align: right;
+  padding: .25rem;
+  margin-right: 5px;
 }
 
-.techIcon img {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  width: calc(2.75vw + 2.75rem);
-  height: calc(2.75vw + 2.75rem);
-  background-color: #5c5c5c;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 10px black;
-          box-shadow: 0px 0px 10px black;
-  margin: 7px 0;
+.form-box input {
+  margin: auto;
+  width: calc(7.5vw + 7.5rem);
+  height: 20px;
+  padding: .25rem;
+  font-size: calc(.5vw + .5rem);
+  border: none;
+  border-bottom: 1.6px solid coral;
 }
 
-.header .banner {
+.project {
+  width: calc(30vw + 15rem);
+  margin: auto;
+  background-color: var(--primaryBackground);
+  margin-bottom: 100px;
+  border-radius: 2rem;
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.header .banner h1 {
-  font-size: calc(2vw + 1.5rem);
-  margin-bottom: 20px;
-  text-align: center;
+.project .form-container {
+  width: 92.5%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 1rem;
 }
 
-.header .banner .navBar {
+.project .form-container .shortProfile {
+  background-color: var(--primaryBackground);
+  display: -ms-grid;
+  display: grid;
+  width: 20vw;
+  margin: 20px auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.project .form-container .shortProfile .formBox {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  width: 250px;
+  color: white;
+  background-color: var(--primaryBackground);
+}
+
+.project .form-container .shortProfile .formBox input {
+  padding: 0.25rem 0.5rem;
+}
+
+.project .form-container .shortProfile .formBox button {
+  width: 100px;
   margin: auto;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
 
-.header .banner .navBar-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header .banner .navBar-list li {
-  border-right: 2px solid black;
-}
-
-.header .banner .navBar-list li:last-child {
-  border-right: none;
-}
-
-.header .banner .navBar-list a {
-  text-decoration: none;
-  padding: 0 1.5rem;
+#obj pre {
   color: black;
-  font-size: calc(1vw + 1rem);
-}
-
-.forms-modal {
-  width: 900px;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-  margin: auto;
-  margin-bottom: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .templates-document {
@@ -197,4 +254,201 @@ h1, h2, h3 {
 
 .profileCards .card .profileCard-info span {
   margin: .2rem 0;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.section h2 {
+  font-family: "Audiowide", cursive;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section .tableSection {
+  margin: auto;
+}
+
+.section .tableSection .table {
+  width: calc(45vw + 15rem);
+  margin: auto;
+  padding: 1rem;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  border-collapse: collapse;
+}
+
+.section .tableSection .table tbody tr td {
+  padding: 1rem;
+}
+
+.section .tableSection .table thead tr th {
+  background-color: coral;
+  padding: 1rem;
+}
+
+.section .employeeCard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.section .card {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  gap: 0.5rem;
+  width: 450px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+}
+
+.section .card .profileImg {
+  background-color: #bbbbbb;
+  width: 80px;
+  height: 80px;
+  margin: 0.5rem;
+  border-radius: 50%;
+}
+
+.section .card .profileImg img {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.section .card .profileCard-info {
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: coral;
+  padding: .25rem;
+}
+
+.section .card .profileCard-info span {
+  margin: 0.2rem 0;
+}
+
+.version {
+  margin: auto;
+  width: 95vw;
+  padding: 0.5rem;
+  text-align: center;
+  color: white;
+  background-color: var(--primaryBackground);
+  margin-bottom: 50px;
+}
+
+.version section {
+  margin: auto;
+  margin-bottom: 20px;
+  max-height: 20rem;
+  overflow-x: auto;
+  scrollbar-width: 5px;
+}
+
+.version section h2 {
+  width: 100%;
+  background-color: orangered;
+  margin-bottom: 20px;
+}
+
+.version section table {
+  background-color: lightgray;
+  padding: 1rem;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.version section table thead {
+  color: var(--primaryBackground);
+  background-color: white;
+}
+
+.version section table thead tr th {
+  padding: 0.5rem;
+}
+
+.version section table tbody {
+  background-color: orangered;
+}
+
+.version section table tbody tr td {
+  padding: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: orangered;
+  color: white;
+  font-size: calc(0.75vw + 0.75rem);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#mainSection {
+  position: relative;
+}
+
+.navBar-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navBar {
+  width: 60vw;
+  padding: .5rem;
+  margin: auto;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
+  background-color: var(--secondaryClrOp);
+}
+
+.navBar__list {
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1.6px solid var(--primaryBackground);
+}
+
+.navBar__list li {
+  border-right: 1.6px solid var(--primaryBackground);
+  margin: 4px 0;
+  padding: .5rem 1rem;
+}
+
+.navBar__list li a {
+  display: block;
+  text-decoration: none;
+  color: var(--primaryBackground);
+  letter-spacing: .1rem;
+}
+
+.navBar__list li a:hover {
+  color: orangered;
+}
+
+.navBar__list li:last-child {
+  border-right: none;
 }
