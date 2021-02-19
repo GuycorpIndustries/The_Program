@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> cbc35c240e9fafaa46c373b700b4ec15bb4334c0
 const pageHeader = document.getElementById('page-header');
 
 function topBanner() {
