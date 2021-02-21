@@ -2,7 +2,7 @@
   "dependencies": {
     "gh-pages": "^3.1.0"
   },
-  "name": "HomeWork",
+  "name": "the_program",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GuycorpIndustries/HomeWork.git"
+    "url": "git+https://github.com/GuycorpIndustries/The_Program.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GuycorpIndustries/HomeWork/issues"
+    "url": "https://github.com/GuycorpIndustries/The_Program/issues"
   },
-  "homepage": "https://github.com/GuycorpIndustries/HomeWork",
+  "homepage": "https://github.com/GuycorpIndustries/The_Program",
   "description": ""
 }
