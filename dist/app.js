@@ -1,7 +1,10 @@
 import Header from './js/header.js';
-// import { default as Header} from '../js/header.js';    ** The Top is More Efficient **
+import DarkMode from './js/darkMode.js'
 
+
+// import { default as Header} from '../js/header.js';    ** The Top is More Efficient **
 Header();
+DarkMode();
 
 /*
 
@@ -26,6 +29,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 */
 
-import {double} from './js/utils.js'
 
 console.log(double(5))

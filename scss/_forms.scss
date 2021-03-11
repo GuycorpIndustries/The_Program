@@ -1,26 +1,27 @@
-#formSection{
+#formSection {
   padding-top: 100px;
 }
-.newEmployee{
+.newEmployee {
   width: calc(30vw + 15rem);
   margin: auto;
   margin-bottom: 100px;
   padding: 1.5rem;
   background-color: white;
-  border: 2px solid var(--primaryBackground);
-  border-radius: 1rem 1rem .5rem .5rem;
+  border: 2px solid var(--darkModeTxtClr);
+  border-radius: 1rem 1rem 0.5rem 0.5rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 
 .form-header {
-  background-image: url('img/background_2.png');
+  background-image: url("img/background_2.png");
   background-size: cover;
+  background-color: var(--darkModeBg);
   padding: 1rem;
-  border: 1.6px solid var(--primaryBackground);
-  border-radius: .25rem .25rem 0 0 ;
-  box-shadow: 0px 0px 4px black;
-  margin-bottom: calc(1vw + .75rem);
-  h1{
+  border: 1.6px solid var(--darkModeTxtClr);
+  border-radius: 0.25rem 0.25rem 0 0;
+  box-shadow: 0px 0px 4px var(--darkModeTxtClr);
+  margin-bottom: calc(1vw + 0.75rem);
+  h1 {
     margin-bottom: 20px;
     font-size: calc(2vw + 2rem);
   }
@@ -30,17 +31,18 @@
 }
 .form {
   margin: auto;
-  padding: .5rem;
-  border-radius: .25rem;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  background-color: var(--darkModeBg);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 5px var(--darkModeBgOp);
   display: grid;
   grid-template-columns: repeat(2fr, 1fr);
 }
-.form .btn{
+.form .btn {
   background-color: coral;
   width: 150px;
   margin: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -51,27 +53,27 @@
 .section h3 {
   background-color: coral;
   margin-bottom: 25px;
-  padding: .25rem;
+  padding: 0.25rem;
 }
-.form-box{
+.form-box {
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-content: right;
   margin-bottom: 10px;
-  label{
-    color: var(--primaryBackground);
+  label {
+    color: var(--themeTxtClr);
     text-align: right;
-    padding: .25rem;
+    padding: 0.25rem;
     margin-right: 5px;
   }
-  input{
+  input {
     margin: auto;
     width: calc(7.5vw + 7.5rem);
     height: 20px;
-    padding: .25rem;
-    font-size: calc(.5vw + .5rem);
-    border:none;
+    padding: 0.25rem;
+    font-size: calc(0.5vw + 0.5rem);
+    border: none;
     border-bottom: 1.6px solid coral;
   }
 }
@@ -80,21 +82,18 @@
 .project {
   width: calc(30vw + 15rem);
   margin: auto;
-  background-color: var(--primaryBackground);
+  background-color: var(--darkModeTxtClr);
   margin-bottom: 100px;
   border-radius: 2rem;
   display: grid;
   .form-container {
-    width: 92.5%;
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 1rem;
-    .shortProfile {
-      background-color: var(--primaryBackground);
-      display: grid;
-      width: 20vw;
-      margin: 20px auto;
-      padding: 2rem;
+    
+    width: 90%;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 2rem;
+    #shortProfile {
+      background-color: var(--darkModeBg);
       border-radius: 0.5rem;
       .formBox {
         display: grid;
@@ -115,16 +114,15 @@
         }
       }
     }
+    #obj pre {
+      color: black;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.25rem 0.5rem;
+    }
   }
 }
-#obj pre {
-  color: black;
-  width: 100px;
 
-  border: none;
-  border-radius: 1rem;
-  padding: 0.25rem 0.5rem;
-}
 .templates-document {
   width: 900px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);

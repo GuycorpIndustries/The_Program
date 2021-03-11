@@ -20,27 +20,25 @@
         }
       }
       thead tr th {
-        background-color: coral;
+        background-color: var(--themeBgOp);
         padding: 1rem;
       }
     }
   }
-
-.employeeCard{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
+  .employeeCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .card {
     display: grid;
     margin: auto;
     gap: 0.5rem;
     width: 450px;
     height: 300px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 5px var(--darkModeTxtClr);
     border-radius: 0.5rem;
     .profileImg {
-      background-color: rgb(187, 187, 187);
+      background-color: var(--darkModeTxtClr);
       width: 80px;
       height: 80px;
       margin: 0.5rem;
@@ -51,14 +49,15 @@
         display: grid;
         place-items: center;
         text-align: center;
+        color: var(--darkModeBg);
       }
     }
     .profileCard-info {
       margin: 0.5rem;
       display: flex;
       flex-direction: column;
-      background-color: coral;
-      padding: .25rem;
+      background-color: var(--themeBgOp);
+      padding: 0.25rem;
     }
 
     .profileCard-info span {
@@ -72,9 +71,17 @@
   width: 95vw;
   padding: 0.5rem;
   text-align: center;
-  color: white;
-  background-color: var(--primaryBackground);
+  color: var(--darkModeTxtClr);
+  background-color: var(--themeBgOp);
   margin-bottom: 50px;
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--themeBgOp);
+    color: white;
+    font-size: calc(0.75vw + 0.75rem);
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
   section {
     margin: auto;
     margin-bottom: 20px;
@@ -87,33 +94,24 @@
       margin-bottom: 20px;
     }
     table {
-      background-color: lightgray;
+      background-color: var(--darkModeBg);
       padding: 1rem;
       width: 100%;
       overflow-x: auto;
 
       thead {
-        color: var(--primaryBackground);
-        background-color: white;
+        color: var(--darkModeTxtClr);
+        background-color: var(--themeBgOp);
         tr th {
           padding: 0.5rem;
         }
       }
       tbody {
-        background-color: orangered;
+        background-color: var(--themeBdr);
         tr td {
           padding: 0.5rem;
         }
       }
     }
   }
-}
-
-.btn {
-  padding: 0.5rem 1rem;
-  background-color: orangered;
-  color: white;
-  font-size: calc(0.75vw + 0.75rem);
-  cursor: pointer;
-  margin-bottom: 10px;
 }

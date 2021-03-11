@@ -29,7 +29,7 @@ function topBanner() {
   logoDiv.style.width = "calc(9vw + 9rem)";
   logoDiv.style.height = "calc(5vw + 5rem)";
   logoDiv.style.fontFamily = "'Audiowide', cursive";
-  logoDiv.style.border = "5px double var(--primaryBackground)";
+  logoDiv.style.border = "5px double var(--darkModeTxtClr)";
   logoDiv.style.borderRadius = "1rem";
   bannerTop.appendChild(logoDiv);
 
@@ -40,7 +40,7 @@ function topBanner() {
   logoTop.style.transform = "translateX(-50%)";
   logoTop.style.position = "absolute";
   logoTop.style.fontSize = "1.5rem";
-  logoTop.style.color = "var(--primaryBackground)";
+  logoTop.style.color = "var(--darkModeTxtClr)";
   logoTop.style.letterSpacing = "0.15rem";
   logoDiv.appendChild(logoTop);
 
@@ -50,7 +50,7 @@ function topBanner() {
   logoImg.style.transform = "rotate(90deg)";
   logoImg.style.width = "calc(4.25vw + 4.25rem)";
   logoImg.style.height = "calc(4.25vw + 4.25rem)";
-  logoImg.style.border = "2px solid var(--primaryBackground)";
+  logoImg.style.border = "2px solid var(--darkModeTxtClr)";
   logoImg.style.borderRadius = "50%";
   logoDiv.appendChild(logoImg);
 
@@ -61,7 +61,7 @@ function topBanner() {
   logoBottom.style.transform = "translateX(-50%)";
   logoBottom.style.position = "absolute";
   logoBottom.style.fontSize = "1.5rem";
-  logoBottom.style.color = "var(--primaryBackground)";
+  logoBottom.style.color = "var(--darkModeTxtClr)";
   logoBottom.style.letterSpacing = "0.15rem";
   logoDiv.appendChild(logoBottom);
 
@@ -106,7 +106,7 @@ function topBanner() {
   banner.style.transform = "rotate(-3.8deg)";
   banner.style.fontSize = "calc(1.5vw + 1.5rem)";
   banner.style.fontFamily = "'Audiowide', cursive";
-  banner.style.color = "var(--primaryBackground)";
+  banner.style.color = "var(--darkModeTxtClr)";
   bannerDiv.appendChild(banner);
 
   bannerTop.appendChild(bannerDiv);
@@ -119,7 +119,7 @@ function topBanner() {
   bannerTop.style.marginBottom = "-7vw";
   bannerTop.style.backgroundImage = "url('img/background_2.png')";
   bannerTop.style.backgroundSize = "cover";
-  bannerTop.style.backgroundColor = "white";
+  bannerTop.style.backgroundColor = "var(--darkModeBg)";
   bannerTop.style.zIndex = "1";
   pageHeader.appendChild(bannerTop);
 }
@@ -157,5 +157,5 @@ export default function loadHeader() {
 }
 
 /*
-export {loadHeader}           USE THIS FOR ALL OTHER EXPORTS
+export {titleSection, topBanner}     USE THIS FOR ALL OTHER EXPORTS
 */

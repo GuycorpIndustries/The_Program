@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,30 +7,41 @@
   <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
   <title>Guycorp Industries</title>
   <link rel="stylesheet" type="text/css" href="main.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital@1&display=swap" rel="stylesheet" />
   <script type="module" src="app.js" defer></script>
-  <script src="./js/employeeClass.js"></script>
 </head>
 
 <body id="pageTop">
+  <div class="darkMode">
+    <button id="darkModeBtn" class="toggle"></button>
+  </div>
   <header id="page-header"></header>
   <main id="mainSection">
     <div class="navBar-container">
       <nav class="navBar">
         <ul id="navBar" class="navBar__list">
           <li><a href="#pageTop">Home</a></li>
-          <li><a href="#mainSection">The Program</a></li>
+          <li><a href="#theProgram">The Program</a></li>
           <li><a href="#formSection">The UI</a></li>
           <li><a href="#tableSection">The Profiles</a></li>
           <li><a href="">The App</a></li>
         </ul>
       </nav>
     </div>
-    <div class="midway">
+    <div class="theProgram" id="theProgram">
+      <h1>C.R.U.D</h1>
       <div class="missionStatement">
-        <h1>hello</h1>
-        <article>
+        <article class="art1">
+          <h2>What is "Self taught"</h2>
+          <p>
+            Get with "The Program"
+          </p>
+          <p>
+            Learn To "Code"
+          </p>
+        </article>
+      </div>
+      <div class="missionStatement">
+        <article class="art2">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -38,7 +49,6 @@
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </article>
       </div>
@@ -102,24 +112,6 @@
         </form>
       </section>
     </div>
-    <article class="art2">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </article>
     <section id="tableSection" class="employeeSection section">
       <section class="tableSection">
         <h2>Employee Table</h2>
@@ -365,9 +357,9 @@
       </form>
     </div>
   </main>
-  <div class="footer">
+  <footer class="footer">
     <footer>Copyright &copy; 2020, Guycorp Industries</footer>
-  </div>
+  </footer>
 </body>
 
 </html>

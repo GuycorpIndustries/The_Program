@@ -125,21 +125,21 @@ document.querySelector('#newEmployee').addEventListener("submit", (e) => {
   e.preventDefault();
   
   // Get Form Values, These are the input values with a new const yhat is used to instantiate a new Employee
-  const _firstName = document.querySelector("#firstName").value;
-  const _middleName = document.querySelector("#middleName").value;
-  const _lastName = document.querySelector("#lastName").value;
-  const _phoneNumber = document.querySelector("#phoneNumber").value;
-  const _email = document.querySelector("#email").value;
+  const firstName = document.querySelector("#firstName").value;
+  const middleName = document.querySelector("#middleName").value;
+  const lastName = document.querySelector("#lastName").value;
+  const phoneNumber = document.querySelector("#phoneNumber").value;
+  const email = document.querySelector("#email").value;
 
   // Validate
 
   // Instantiate Employee
   const employee = new Employee(
-    _firstName,
-    _middleName,
-    _lastName,
-    _phoneNumber,
-    _email
+    firstName,
+    middleName,
+    lastName,
+    phoneNumber,
+    email
   );
 
   // Add Employee to Profile Card
