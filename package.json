@@ -1,8 +1,8 @@
 {
   "name": "the_program",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

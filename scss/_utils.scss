@@ -10,16 +10,16 @@
     padding: .5rem;
     margin: auto;
     clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 15% 100%);
-    background-color: var(--darkModeClrlgtOp);
+    background-color: var(--secondaryClrOp);
     &__list{
         width: 100%;
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1.6px solid var(--themeBdr);
+        border: 1.6px solid var(--primaryBackground);
         li{
-            border-right: 1.6px solid var(--themeBdr);
+            border-right: 1.6px solid var(--primaryBackground);
             margin: 4px 0;
             padding: .5rem 1rem;
 
@@ -27,65 +27,14 @@
         li a{
             display: block;
             text-decoration: none;
-            color: var(--darkModeTxtClr);
-            font-weight: 500;
+            color: var(--primaryBackground);
             letter-spacing: .1rem;
         }
         li a:hover{
-            color: var(--themeTxtClr);
+            color: orangered;
         }
     }
     &__list li:last-child{
         border-right: none;
     }
-}
-.darkMode {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 60px;
-  height: 30px;
-  border-radius: 30px;
-  background-color: var(--darkModeBgOp);
-  box-shadow: 0px 0px 10px var(--darkModeTxtClr);
-  border: 1px solid var(--darkModeBg);
-  z-index: 55;
-  .toggle {
-    cursor: pointer;
-    width: 23px;
-    height: 23px;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    background-color: var(--darkModeBg);
-    box-shadow: 0px 0px 5px var(--darkModeTxtClr);
-    margin: 2px;
-  }
-}
-
-.toggle.toggleAnim{
-  animation: darkModeAnim 400ms linear both;
-}
-
-.toggle.toggleAnimRev{
-  animation: darkModeAnimRev 400ms linear both;
-
-}
-
-@keyframes darkModeAnim {
-0%{
-transform: translateX(0);
-
-}
-100%{
-transform: translateX(30px);
-}
-}
-@keyframes darkModeAnimRev {
-0%{
-transform: translateX(30px);
-}
-100%{
-transform: translateX(0);
-}
 }
