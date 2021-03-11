@@ -4,12 +4,15 @@
   color: orangered;
 }
 
-body.transition,
-body.transition *,
-body.transition *:before,
-body.transition *:after {
-  -webkit-transition: all 750ms;
-  transition: all 750ms;
+:root {
+  --bk_primary: lightblue;
+  --padding:2rem;
+  --margin:1rem;
+  --border:3px solid darkblue;
+  --primaryBackground: black;
+  --primaryClrDark: black;
+  --primaryClrMid: grey;
+  --secondaryClr: white;
 }
 
 * {
@@ -20,9 +23,13 @@ body.transition *:after {
 
 h1, h2, h3 {
   font-family: 'audiowide', cursive;
-  color: var(--darkModeTxtClr);
+  margin-bottom: 50px;
   text-align: center;
   margin: 0;
+}
+
+body {
+  background-color: #dddddd;
 }
 
 .art2 {
@@ -114,7 +121,7 @@ h1, h2, h3 {
 }
 
 .section .tableSection .table thead tr th {
-  background-color: var(--themeBgOp);
+  background-color: coral;
   padding: 1rem;
 }
 
@@ -132,13 +139,13 @@ h1, h2, h3 {
   gap: 0.5rem;
   width: 450px;
   height: 300px;
-  -webkit-box-shadow: 0px 0px 5px var(--darkModeTxtClr);
-          box-shadow: 0px 0px 5px var(--darkModeTxtClr);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
 }
 
 .section .card .profileImg {
-  background-color: var(--darkModeTxtClr);
+  background-color: #bbbbbb;
   width: 80px;
   height: 80px;
   margin: 0.5rem;
@@ -152,7 +159,6 @@ h1, h2, h3 {
   display: grid;
   place-items: center;
   text-align: center;
-  color: var(--darkModeBg);
 }
 
 .section .card .profileCard-info {
@@ -164,8 +170,8 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: var(--themeBgOp);
-  padding: 0.25rem;
+  background-color: coral;
+  padding: .25rem;
 }
 
 .section .card .profileCard-info span {
@@ -177,18 +183,9 @@ h1, h2, h3 {
   width: 95vw;
   padding: 0.5rem;
   text-align: center;
-  color: var(--darkModeTxtClr);
-  background-color: var(--themeBgOp);
-  margin-bottom: 50px;
-}
-
-.version .btn {
-  padding: 0.5rem 1rem;
-  background-color: var(--themeBgOp);
   color: white;
-  font-size: calc(0.75vw + 0.75rem);
-  cursor: pointer;
-  margin-bottom: 10px;
+  background-color: var(--primaryBackground);
+  margin-bottom: 50px;
 }
 
 .version section {
@@ -206,15 +203,15 @@ h1, h2, h3 {
 }
 
 .version section table {
-  background-color: var(--darkModeBg);
+  background-color: lightgray;
   padding: 1rem;
   width: 100%;
   overflow-x: auto;
 }
 
 .version section table thead {
-  color: var(--darkModeTxtClr);
-  background-color: var(--themeBgOp);
+  color: var(--primaryBackground);
+  background-color: white;
 }
 
 .version section table thead tr th {
@@ -222,7 +219,7 @@ h1, h2, h3 {
 }
 
 .version section table tbody {
-  background-color: var(--themeBdr);
+  background-color: orangered;
 }
 
 .version section table tbody tr td {
@@ -400,87 +397,6 @@ h1, h2, h3 {
           box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
   margin: auto;
   margin-bottom: 50px;
-}
-
-.darkMode {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 60px;
-  height: 30px;
-  border-radius: 30px;
-  background-color: var(--darkModeBgOp);
-  -webkit-box-shadow: 0px 0px 10px var(--darkModeTxtClr);
-          box-shadow: 0px 0px 10px var(--darkModeTxtClr);
-  border: 1px solid var(--darkModeBg);
-  z-index: 55;
-}
-
-.darkMode .toggle {
-  cursor: pointer;
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  background-color: var(--darkModeBg);
-  -webkit-box-shadow: 0px 0px 5px var(--darkModeTxtClr);
-          box-shadow: 0px 0px 5px var(--darkModeTxtClr);
-  margin: 2px;
-}
-
-.toggle.toggleAnim {
-  -webkit-animation: darkModeAnim 400ms linear both;
-          animation: darkModeAnim 400ms linear both;
-}
-
-.toggle.toggleAnimRev {
-  -webkit-animation: darkModeAnimRev 400ms linear both;
-          animation: darkModeAnimRev 400ms linear both;
-}
-
-@-webkit-keyframes darkModeAnim {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-}
-
-@keyframes darkModeAnim {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-}
-
-@-webkit-keyframes darkModeAnimRev {
-  0% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes darkModeAnimRev {
-  0% {
-    -webkit-transform: translateX(30px);
-            transform: translateX(30px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
 }
 
 .theProgram {
